@@ -5,10 +5,6 @@ import java.util.Random;
 
 public class ArrayInit {
 
-    //int arrayL;
-    int min;
-    int max;
-    int[] blackBox;
 
     ArrayInit(int arrayL) {
         int[] blackBox = new int[arrayL];
