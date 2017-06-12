@@ -21,7 +21,7 @@ public class ArrayInit {
 
     }
 
-        int getMinValue() {
+    int getMinValue() {
         int min = blackBox[0];
         for (int j = 0; j < blackBox.length; j++) {
             if (min > blackBox[j]) {
@@ -33,7 +33,7 @@ public class ArrayInit {
 
     }
 
-        int getMaxValue() {
+    int getMaxValue() {
         int max = blackBox[0];
         for (int j = 0; j < blackBox.length; j++) {
             if (max < blackBox[j]) {
