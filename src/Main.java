@@ -16,7 +16,8 @@ public class Main {
         } else if (arrayL > 100) {
             System.out.println("Ошибка! Длина массива должна быть от 1 до 100!");
         } else {
-            ArrayInit array = new ArrayInit(arrayL);
+            ArrayInit array = new ArrayInit();
+            array.createArray(arrayL);
 
         }
 
