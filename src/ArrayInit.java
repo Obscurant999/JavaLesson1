@@ -5,8 +5,14 @@ import java.util.Random;
 
 public class ArrayInit {
 
+    int min;
+    int max;
 
-    ArrayInit(int arrayL) {
+    ArrayInit() {
+
+    }
+
+    void createArray(int arrayL) {
         int[] blackBox = new int[arrayL];
         Random random = new Random();
         System.out.println("Содержимое массива: ");
@@ -14,18 +20,16 @@ public class ArrayInit {
             blackBox[i] = random.nextInt(999);
             System.out.print(blackBox[i] + ", ");
         }
-
         System.out.println("");
 
         int min = blackBox[0];
         for (int j = 0; j < blackBox.length; j++) {
             if (min > blackBox[j]) {
-            min = blackBox[j];
+                min = blackBox[j];
             }
-
         }
         System.out.println("Наименьшее введенное число : " + min);
-
+        System.out.println("");
         int max = blackBox[0];
         for (int k = 0; k < blackBox.length; k++) {
             if (max < blackBox[k]) {
@@ -33,8 +37,6 @@ public class ArrayInit {
             }
         }
         System.out.println("Наибольшее введенное число : " + max);
-
-
     }
 
 }
