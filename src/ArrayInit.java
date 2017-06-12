@@ -6,8 +6,6 @@ import java.util.Random;
 public class ArrayInit {
 
     int blackBox[];
-    int arrayL;
-    int cell;
 
     ArrayInit(int arrayL) {
         blackBox = new int[arrayL];
