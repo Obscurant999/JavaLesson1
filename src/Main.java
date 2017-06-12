@@ -16,8 +16,13 @@ public class Main {
         } else if (arrayL > 100) {
             System.out.println("Ошибка! Длина массива должна быть от 1 до 100!");
         } else {
-            ArrayInit array = new ArrayInit();
-            array.createArray(arrayL);
+            ArrayInit array = new ArrayInit(arrayL);
+            System.out.println("");
+            System.out.println("Минимальное значение = " + array.getMinValue());
+            System.out.println("");
+            System.out.println("Максимальное значение = " + array.getMaxValue());
+
+
 
         }
 

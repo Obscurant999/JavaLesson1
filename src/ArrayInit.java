@@ -5,15 +5,12 @@ import java.util.Random;
 
 public class ArrayInit {
 
-    int min;
-    int max;
+    int blackBox[];
+    int arrayL;
+    int cell;
 
-    ArrayInit() {
-
-    }
-
-    void createArray(int arrayL) {
-        int[] blackBox = new int[arrayL];
+    ArrayInit(int arrayL) {
+        blackBox = new int[arrayL];
         Random random = new Random();
         System.out.println("Содержимое массива: ");
         for (int i = 0; i < blackBox.length; i++) {
@@ -22,22 +19,32 @@ public class ArrayInit {
         }
         System.out.println("");
 
+    }
+
+        int getMinValue() {
         int min = blackBox[0];
         for (int j = 0; j < blackBox.length; j++) {
             if (min > blackBox[j]) {
                 min = blackBox[j];
             }
+
         }
-        System.out.println("Наименьшее введенное число : " + min);
-        System.out.println("");
-        int max = blackBox[0];
-        for (int k = 0; k < blackBox.length; k++) {
-            if (max < blackBox[k]) {
-                max = blackBox[k];
-            }
-        }
-        System.out.println("Наибольшее введенное число : " + max);
+        return min;
+
     }
+
+        int getMaxValue() {
+        int max = blackBox[0];
+        for (int j = 0; j < blackBox.length; j++) {
+            if (max < blackBox[j]) {
+                max = blackBox[j];
+            }
+
+        }
+        return max;
+
+    }
+
 
 }
 
